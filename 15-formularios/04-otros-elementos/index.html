@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otros elementos de formularios</title>
+</head>
+<body>
+  <header>
+    <h1>Otros elementos de formularios</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Elemento fieldset y legend</h2>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+          </div>
+          <div>
+            <label for="surname">Apellido</label>
+            <input type="text" id="surname">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <h2>Subir archivos</h2>
+      <form>
+        <input type="file">
+      </form>
+    </section>
+    <section>
+      <h2>Barra de progreso</h2>
+      <form>
+        <label for="fuel">Combustible</label>
+        <meter id="fuel" min="0" max="100" value="60" low="30" high="75" optimum="50">
+        </meter>
+      </form>
+    </section>
+    <section>
+      <h2>Representar el progreso de una tarea</h2>
+      <form>
+        <label for="task">Tarea</label>
+        <progress id="task" max="100" value="40">
+        </progress>
+      </form>
+    </section>
+    <section>
+      <h2>Introducir texto en un formulario</h2>
+      <form>
+        <div>
+          <label for="message">Mensaje</label>
+        </div>
+        <textarea name="" id="message" cols="50" rows="10"></textarea>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <header>
+    <h1>Formularios</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Estructura básica de un formulario</h2>
+      <form>
+        <label>Nombre</label>
+        <input>
+        <button>Enviar</button>
+      </form>
+    </section>
+    <section>
+      <h2>Asociar input y label</h2>
+      <form>
+        <label for="name">Nombre</label>
+        <input id="name">
+        <button>Enviar</button>
+      </form>
+    </section>
+    <section>
+      <h2>Etiqueta button vs type button vs type submit</h2>
+      <form>
+        <input>
+        <button>Enviar button</button>
+        <input type="button" value="Enviar type button">
+        <input type="submit" value="Enviar type submit">
+      </form>
+    </section>
+    <section>
+      <h2>Inputs para fechas</h2>
+      <form>
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+      </form>
+    </section>
+    <section>
+      <h2>Inputs para móviles</h2>
+      <form>
+        <div>
+          <label> Buscar
+            <input type="search">
+          </label>
+        </div>
+        <div>
+          <label> Teléfono
+            <input type="tel">
+          </label>
+        </div>
+        <div>
+          <label> Email
+            <input type="email">
+          </label>
+        </div>
+        <div>
+          <label> Password
+            <input type="password">
+          </label>
+        </div>
+        <div>
+          <label> Url
+            <input type="url">
+          </label>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Otros inputs</h2>
+      <form>
+        <input type="color">
+        <input type="number">
+        <input type="range" step="10" min="0" max="20">
+        <input type="text">
+        <input type="reset">
+      </form>
+    </section>
+  </main>
+</body>
+</html>

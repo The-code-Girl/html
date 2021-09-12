@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inputs seleccionables</title>
+</head>
+<body>
+  <header>
+    <h1>Inputs seleccionables</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Formularios de selección</h2>
+      <form>
+        <h3>Género</h3>
+        <label>
+          Masculino
+          <input type="radio" name="gender" value="masculino">
+        </label>
+        <label>
+          Femenino
+          <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>
+          Otro
+          <input type="radio" name="gender" value="otro" checked>
+        </label>
+      </form>
+      <form>
+        <h3>Lenguajes que conoces</h3>
+        <label>
+          HTML
+          <input type="checkbox" name="language" value="html" checked>
+        </label>
+        <label>
+          CSS
+          <input type="checkbox" name="language" value="css">
+        </label>
+        <label>
+          JavaScript
+          <input type="checkbox" name="language" value="js" checked>
+        </label>
+      </form>
+      <form>
+        <h3>Lenguajes</h3>
+        <select name="languages">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </select>
+      </form>
+      <form>
+        <h3>Mascotas</h3>
+        <select name="mascotas">
+          <optgroup label="Domésticos">
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="conejo">Conejo</option>
+          </optgroup>
+          <optgroup label="Aves">
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            <option value="pichon">Pichón</option>
+          </optgroup>
+        </select>
+      </form>
+    </section>
+    <section>
+      <h2>Datalist</h2>
+      <form>
+        <input type="list" list="pets">
+        <datalist id="pets">
+          <option value="Gato"></option>
+          <option value="Perro"></option>
+          <option value="Conejo"></option>
+          <option value="Loro"></option>
+          <option value="Canario"></option>
+          <option value="Pichon"></option>
+        </datalist>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

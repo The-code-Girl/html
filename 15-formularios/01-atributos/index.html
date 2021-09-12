@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos para formularios</title>
+</head>
+<body>
+  <header>
+    <h1>Atributos para formularios</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Campo requerido</h2>
+      <form>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" placeholder="Introduce tu nombre">
+        </div>
+        <div>
+          <label for="surname">Apellido</label>
+          <input type="text" id="surname" placeholder="Introduce tu apellido" required>
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    <section>
+      <h2>Campo de solo lectura</h2>
+      <form>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" value="readonly" readonly>
+        </div>
+        <div>
+          <label for="surname">Apellido</label>
+          <input type="text" value="disabled" disabled>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Campos mínimos y máximos</h2>
+      <form>
+        <div>
+          <label for="number">Cantidad de materias</label>
+          <input type="number" id="number" min="5" max="10">
+          <input type="submit" value="Enviar">
+        </div>
+        <div>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" minlength="4" maxlength="10">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>Establecer opción por defecto</h2>
+      <form>
+        <select name="numbers">
+          <option value="one">One</option>
+          <option value="two" selected>Two</option>
+          <option value="three">Three</option>
+        </select>
+      </form>
+    </section>
+    <section>
+      <h2>Establecer el foco en el formulario</h2>
+      <form>
+        <label for="focus"></label>
+        <input type="text" id="focus" placeholder="Escribe algo" autofocus>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
