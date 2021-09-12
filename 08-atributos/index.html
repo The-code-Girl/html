@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- Especifica el lenguaje del documento -->
+<html lang="es">
+<head>
+  <!-- Atributo que declara la codificación de caracteres -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos</title>
+</head>
+<body>
+  <header>
+    <h1>Atributos globales</h1>
+  </header>
+  <p class="paragraph">Clases</p>
+  <p id="paragraph">Identificador</p>
+  <p title="Ejemplo del atributo title">Título con tooltip</p>
+  <p id="data" data-example="Dato de ejemplo">Datos pasados en la etiqueta</p>
+  <script>
+    const data = document.getElementById('data')
+    console.log(data.dataset.example)
+  </script>
+</body>
+</html>
